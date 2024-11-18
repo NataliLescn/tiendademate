@@ -11,69 +11,93 @@
     <title>Document - Tienda de Mate</title>
 </head>
 <body>
-    <<header>
- 
+    <header class="header2">
         <nav id="navbar" class="navbar">
-            <img id="logoMate" src="./img/logotipo.png" alt="logomate" style="max-width: 100px";> 
-        <ul>
-            <li><a href="./tienda.html">Nuestros mates</a></li>
-            <li><a href="./tutoriales.html">Tutoriales</a></li>
-            <li> <a href="./encontranos.html">Locales</a></li>
-            <li><a href="./menu-tienda.html">Nuestro Menú</a></li>
-            <li><a href="./trabaja-en-tdm.html">Trabajá con nosotros</a></li>
-            <li><a href="./franquicias.html">Franquicias</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
-        </ul>
+            <a href="./index.html">
+                <img class="logo" src="./img/logotipo.png" alt="logomate" style="max-width: 170px;">
+                </a>
+            <ul>
+                <li><a href="./tienda.html">Nuestros mates</a></li>
+                <li><a href="./tutoriales.html">Tutoriales</a></li>
+                <li><a href="./encontranos.html">Locales</a></li>
+                <li><a href="./menu-tienda.html">Nuestro Menú</a></li>
+                <li><a href="./trabaja-en-tdm.html">Trabajá con nosotros</a></li>
+                <li><a href="./franquicias.html">Franquicias</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
         </nav>
     </header>
 
-    <footer>
-        <div class="footer-content">
-            
-            <div class="footer-section about">
-                <h2>Tienda de Mate</h2>
-                <p>Descubre nuestra selección de mates de todo el mundo.</p>
-            </div>
-            <div class="footer-section links">
-                <h2>Contenidos</h2>
-                <ul>
-                    <li><a id="foot" href="./index.html">Inicio</a></li>
-                    <li><a id="foot" href="./tienda.html">Productos</a></li>
-                    <li><a id="foot" href="./contacto.html">Contacto</a></li>
-                    <li><a id="foot" href="./encontranos.html">Ubicación</a></li>
-                </ul>
-            </div>
-            <div class="footer-section links">
-                <h2>Necesitás ayuda</h2>
-                <ul>
-                    <li><a id="foot" href="#">Tutoriales</a></li>
-                    <li><a id="foot" href="./trabaja-en-tdm.html">Trabajá en TDM</a></li>
-                    <li><a id="foot" href="./franquicias.html">Franquicias</a></li>
-                    <li><a id="foot" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h2>Suscribete a nuestro newsletter</h2>
-                <input type="email" name="email" id="email" placeholder="Tu email">
-                <h2>Contacto</h2>
-                <p>Email: info@tiendademate.com.ar</p>
-                <p>Teléfono: +54 9 11 1234 5678</p>
-                <div>
-                    <a id="ig" href="https://www.instagram.com/tiendadelmate_/" target="_blank" rel="noopener noreferrer">
-                      <img src="./img/icons8-instagram-50.png" alt="Instagram">
-                    </a>    
-                    <a id="fb" href="https://www.facebook.com/tiendadelmatee" target="_blank" rel="noopener noreferrer">
-                      <img src=".//img/icons8-facebook-nuevo-50.png" alt="Facebook">
-                    </a>
-                  </div>
+    <section id="containerform2">
+        <h2 class="h2">Formulario de Contacto</h2>
+        <div class="form-container2">
+            <form class="form2" action="#">
+              <div class="input-group2">
+                <label class="label1" for="nombre">Nombre</label>
+                <input type="text" class="input1" name="nombre2" required>
+              </div>
+              <div class="input-group2">
+                <label class="label1" for="email">Correo Electrónico</label>
+                <input type="email" class="input1" name="email2" required>
+              </div>
+              <div class="input-group2">
+                <label class="label1" for="mensaje2">Mensaje</label>
+                <textarea id="textoar" name="mensaje2" required></textarea>
+              </div>
+              <div class="buttonContainer">
+                <button class="button1" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>    
+    </section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>Tienda del Mate</h2>
+            <p>Descubre nuestra selección de mates de todo el mundo.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Contenidos</h2>
+            <ul>
+                <li><a id="foot" href="./index.html">Inicio</a></li>
+                <li><a id="foot" href="./tienda.html">Productos</a></li>
+                <li><a id="foot" href="./contacto.html">Contacto</a></li>
+                <li><a id="foot" href="./encontranos.html">Ubicación</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h2>Necesitás ayuda</h2>
+            <ul>
+                <li><a id="foot" href="./tutoriales.html">Tutorial</a></li>
+                <li><a id="foot" href="./trabaja-en-tdm.html">Trabajá en TDM</a></li>
+                <li><a id="foot" href="./franquicias.html">Franquicias</a></li>
+                <li><a id="foot" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Suscribete a nuestro newsletter</h2>
+            <input type="email" name="email" id="email" placeholder="Tu email">
+            <button id="btnsuscribe" type="submit" onclick="alert(`Tu subscripción fue exitosa`)">Suscribirme</button>
+            <h2>Contacto</h2>
+            <p>Email: info@tiendademate.com.ar</p>
+            <p>Teléfono: +54 9 11 1234 5678</p>
+            <div>
+                <a id="ig" href="https://www.instagram.com/tiendadelmate_/" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/icons8-instagram-50.png" alt="Instagram">
+                </a>    
+                <a id="fb" href="https://www.facebook.com/tiendadelmatee" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/icons8-facebook-nuevo-50.png" alt="Facebook">
+                </a>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tienda de Mate. Todos los derechos reservados.</p>
-        </div>
-    </footer>     
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Tienda de Mate. Todos los derechos reservados.</p>
+    </div>
+</footer>
 
     <script src="./js/script.js"></script>
 </body>

@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda del Mate</title>
 
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link  id="lato" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link id="lato" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
-    <body>
-        
-    <header>
- 
+<body>
+    <header class="header1">
         <nav id="navbar" class="navbar">
-            <img id="logoMate" src="./img/logotipo.png" alt="logomate" style="max-width: 100px";> 
-        <ul>
-            <li><a href="./tienda.html">Nuestros mates</a></li>
-            <li><a href="./tutoriales.html">Tutoriales</a></li>
-            <li> <a href="./encontranos.html">Locales</a></li>
-            <li><a href="./menu-tienda.html">Nuestro Menú</a></li>
-            <li><a href="./trabaja-en-tdm.html">Trabajá con nosotros</a></li>
-            <li><a href="./franquicias.html">Franquicias</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
-        </ul>
+            <img class="logo" src="./img/logotipo.png" alt="logomate" style="max-width: 170px;">
+            <ul>
+                <li><a href="./tienda.html">Nuestros mates</a></li>
+                <li><a href="./tutoriales.html">Tutoriales</a></li>
+                <li><a href="./encontranos.html">Locales</a></li>
+                <li><a href="./menu-tienda.html">Nuestro Menú</a></li>
+                <li><a href="./trabaja-en-tdm.html">Trabajá con nosotros</a></li>
+                <li><a href="./franquicias.html">Franquicias</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -33,19 +32,21 @@
         <div class="banner">
             <img src="./img/banner.jpg" alt="Banner de Tienda de Mate">
             <div class="banner-text">
-                <h1>Bienvenido a Tu Tienda de Mate</h1>
+                <h1>Bienvenido a Tu Tienda del Mate</h1>
                 <p>Descubre nuestra variedad de productos para disfrutar del mejor mate.</p>
                 <a href="./encontranos.html" class="btnp">Encontranos</a>
-</main>
-
-<div class="caja1">
+            </div>
+        </div>
+        <h2 class="tittle1">Nuestros productos</h2>
+        <div class="caja1">
+         
             <div class="carousel-container">
                 <button class="prev" onclick="prevSlide()">&#10094;</button>
                 <div class="carousel-slides">
                     <div class="carousel-item"><img src="./img/mate1.jpeg" alt="Imagen 1" class="carousel-slide"></div>
                     <div class="carousel-item"><img src="./img/mate2.jpeg" alt="Imagen 2" class="carousel-slide"></div>
-                    <div class="carousel-item"><img src="./img/mate3.jpg" alt="Imagen 3" class="carousel-slide"></div>
-                    <div class="carousel-item"><img src="./img/matey.jpeg" alt="Imagen 4" class="carousel-slide"></div>
+                    <div class="carousel-item"><img src="./img/matey.jpeg" alt="Imagen 3" class="carousel-slide"></div>
+                    <div class="carousel-item"><img src="./img/yerba1.jpg" alt="Imagen 4" class="carousel-slide"></div>
                     <div class="carousel-item"><img src="./img/taraguiyerba.jpg" alt="Imagen 5" class="carousel-slide"></div>
                     <div class="carousel-item"><img src="./img/torpedomate.jpg" alt="Imagen 6" class="carousel-slide"></div>
                     <div class="carousel-item"><img src="./img/mateeyerva.webp" alt="Imagen 7" class="carousel-slide"></div>
@@ -55,56 +56,70 @@
                 <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>
         </div>
-  
+    </main>
 
-<footer>
-    <div class="footer-content">
-        
-        <div class="footer-section about">
-            <h2>Tienda de Mate</h2>
-            <p>Descubre nuestra selección de mates de todo el mundo.</p>
+    <div class="container">
+        <div class="image">
+            <img src="./img/index1.jpg" alt="Imagen 1">
         </div>
-        <div class="footer-section links">
-            <h2>Contenidos</h2>
-            <ul>
-                <li><a id="foot" href="./index.html">Inicio</a></li>
-                <li><a id="foot" href="./tienda.html">Productos</a></li>
-                <li><a id="foot" href="./contacto.html">Contacto</a></li>
-                <li><a id="foot" href="./encontranos.html">Ubicación</a></li>
-            </ul>
-        </div>
-        <div class="footer-section links">
-            <h2>Necesitás ayuda</h2>
-            <ul>
-                <li><a id="foot" href="#">Tutoriales</a></li>
-                <li><a id="foot" href="./trabaja-en-tdm.html">Trabajá en TDM</a></li>
-                <li><a id="foot" href="./franquicias.html">Franquicias</a></li>
-                <li><a id="foot" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="footer-section contact">
-            <h2>Suscribete a nuestro newsletter</h2>
-            <input type="email" name="email" id="email" placeholder="Tu email">
-            <h2>Contacto</h2>
-            <p>Email: info@tiendademate.com.ar</p>
-            <p>Teléfono: +54 9 11 1234 5678</p>
-            <div>
-                <a id="ig" href="https://www.instagram.com/tiendadelmate_/" target="_blank" rel="noopener noreferrer">
-                  <img src="./img/icons8-instagram-50.png" alt="Instagram">
-                </a>    
-                <a id="fb" href="https://www.facebook.com/tiendadelmatee" target="_blank" rel="noopener noreferrer">
-                  <img src=".//img/icons8-facebook-nuevo-50.png" alt="Facebook">
-                </a>
-              </div>
+        <div class="image">
+            <img src="./img/index2.jpg" alt="Imagen 2">
         </div>
     </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2024 Tienda de Mate. Todos los derechos reservados.</p>
+
+    <div class="sector">
+        <div class="image2">
+            <img src="./img/tipodemate.jpg" alt="tipoDeMates">
+        </div>
     </div>
-</footer>   
 
-<script src="./js/script.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Tienda del Mate</h2>
+                <p>Descubre nuestra selección de mates de todo el mundo.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Contenidos</h2>
+                <ul>
+                    <li><a id="foot" href="./index.html">Inicio</a></li>
+                    <li><a id="foot" href="./tienda.html">Productos</a></li>
+                    <li><a id="foot" href="./contacto.html">Contacto</a></li>
+                    <li><a id="foot" href="./encontranos.html">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="footer-section links">
+                <h2>Necesitás ayuda</h2>
+                <ul>
+                    <li><a id="foot" href="./tutoriales.html">Tutorial</a></li>
+                    <li><a id="foot" href="./trabaja-en-tdm.html">Trabajá en TDM</a></li>
+                    <li><a id="foot" href="./franquicias.html">Franquicias</a></li>
+                    <li><a id="foot" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Suscribete a nuestro newsletter</h2>
+                <input type="email" name="email" id="email" placeholder="Tu email">
+                <button id="btnsuscribe" type="submit" onclick="alert(`Tu subscripción fue exitosa`)">Suscribirme</button>
+                <h2>Contacto</h2>
+                <p>Email: info@tiendademate.com.ar</p>
+                <p>Teléfono: +54 9 11 1234 5678</p>
+                <div>
+                    <a id="ig" href="https://www.instagram.com/tiendadelmate_/" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/icons8-instagram-50.png" alt="Instagram">
+                    </a>    
+                    <a id="fb" href="https://www.facebook.com/tiendadelmatee" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/icons8-facebook-nuevo-50.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tienda de Mate. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

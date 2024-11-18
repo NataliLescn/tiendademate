@@ -1,15 +1,9 @@
 /*navbar*/
 
-const navbar = document.getElementById('navbar');
-const content = document.querySelector('.content');
-
-window.onscroll = function() {
-    if (window.scrollY > navbar.offsetHeight) { 
-        navbar.classList.add('fixed');
-    } else {
-        navbar.classList.remove('fixed');
-    }
-};
+window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("abajo",window.scrollY>0);
+})
 
 /*carrito*/
 
